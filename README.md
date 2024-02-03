@@ -1,38 +1,47 @@
-# Python Template
----
-This repo is for the mini-project 1 for IDS 706 Data Engineering Systems
 
----
-Using codespaces, this template uses github actions to create a makefile that performs the following:
-* `make install`
-* `make test`
-* `make lint`
-* `make format`
+## Requirements
 
-This template also includes:
-* `main.py` and `test_main.py` to confirm the template and github action are performing as expected.
-* dockerfile
-* Various package versions in `requirements.txt`
+Before using the theme, you need to install the [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ 0.15.0.
 
----
+## Installation
 
-This make file will be used in future projects for this class and personal projects. 
+### Step 1: Create a new zola site
 
----
+```bash
+zola init myblog
+```
 
-How to Use:
+### Step 2: Install AdiDoks, a Zola theme
 
-1. Open Codespaces, allow for the environmenet to be set up
-2. Run the make commands: install, format, lint, test
+Download this theme to your themes directory
 
-Example Results:
+```bash
+cd mysite/themes
+git clone https://github.com/aaranxu/adidoks.git
+```
 
-`make format`:
+### Step 3: Configuration
 
-![My Image](Make_Format_Success.png)
+Copy the `config.toml.example` from the theme directory to your project's
+root directory:
 
-`make lint`:
-![My Image](Make_Lint_Success.png)
+```bash
+cp themes/adidoks/config.toml.example config.toml
+```
 
-`make test`:
-![My Image](Make_Test_Success.png)
+### Step 4: Customize
+
+Modify things like content, pages, and other details
+
+### Step 5: Run the project
+
+Just run `zola serve` in the root path of the project:
+
+```bash
+zola serve
+```
+
+AdiDoks will start the Zola development web server accessible by default at 
+`http://127.0.0.1:1111`. Saved changes will live reload in the browser automatically.
+
+### CI/CD has passed
