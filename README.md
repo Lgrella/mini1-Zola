@@ -45,3 +45,12 @@ AdiDoks will start the Zola development web server accessible by default at
 `http://127.0.0.1:1111`. Saved changes will live reload in the browser automatically.
 
 ### CI/CD has passed
+
+### <u>Images of Running Static Website</u>
+
+#### Homepage 
+![homepage](images/homepage.png)
+#### Resume 
+![resume](images/resume.png)
+#### Portfolio
+![portfolio](images/portfolio.png)
